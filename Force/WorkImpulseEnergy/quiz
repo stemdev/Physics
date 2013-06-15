@@ -1,0 +1,46 @@
+\documentclass[12pt]{report}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{verbatim}
+\usepackage[letterpaper,left=1cm,right=2cm, top=1.5cm,
+bottom=1.5cm,head=0cm,foot=1cm]{geometry}
+
+\parindent=0in
+
+
+\newcommand{\m}{\mbox{ m }}
+\newcommand{\kg}{\mbox{ kg }}
+\newcommand{\s}{\mbox{ s }}
+\newcommand{\ke}{\mbox{\small KE}}
+\newcommand{\pe}{\mbox{\small PE}}
+
+
+\newcommand{ \probDir}[1]{{ \bf\small #1 \mbox{  }}}
+\newcommand{ \multChoice}[5]{ \item #1 \begin{multicols}{2} \begin{enumerate} \item #2 \\ \item #3 \\ \item #4 \\ \item #5 \\ \end{enumerate} \end{multicols}}
+
+\newcommand{ \breakList}{\setcounter{saveenum}{\value{enumi}} \end{enumerate}}
+\newcommand{ \contList}{\begin{enumerate} \setcounter{enumi}{\value{saveenum}}}
+
+\newcounter{saveenum}
+
+\def \wspace{5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+{\bf{Honors Physics} \hfill {Quiz 5a: Work, Energy, and Impulse} \hfill {Mr. Kelley}} \\ \\
+%%%%%%%%%%
+\mbox{} \hfill $W=F\cdot d \cdot (\cos \theta)$ \hfill $\ke = \frac{1}{2}mv^2$ \hfill $\pe = mgh$ \hfill $I = \Delta \rho = F\cdot t$ \hfill $P = \frac{W}{t}=\frac{E}{t}$ \hfill\hfill \mbox{}
+
+\begin{enumerate}
+\multChoice{The concept of impulse is usually used to understand: }{A change in force}{A change in acceleration}{A change in momentum}{A change in energy}
+\multChoice{When work is done on a system, we can most easily understand: }{A change in force}{A change in acceleration}{A change in momentum}{A change in energy}
+\multChoice{A racquetball is traveling at 34 m/s when it strikes a wall and rebounds at 26 m/s.  If the ball weighs .05 kg, what impulse does the wall provide to the ball?}{3 kg$\cdot$m/s}{0.4 kg$\cdot$m/s}{3.9 kg$\cdot$m/s}{12 kg$\cdot$m/s}
+\multChoice{A 50 kg cart starts from rest and rolls 100 m down a hill at $\theta = 30^\circ$.  After the 100 m, the cart is moving with a speed of 25 m/s.  About how much energy was lost to friction? (Use g = 10 m/s$^2$)}{9375 J}{200 J}{12450 J}{2545 J}
+\multChoice{How much energy does a 60 W light bulb radiate in one hour?}{1 J}{60 J}{3600 J}{216000 J}
+%%%%
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,79 @@
+\documentclass[12pt]{report}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{verbatim}
+
+%\usepackage{adjustbox}
+
+\usepackage[letterpaper,left=1cm,right=2cm, top=1.5cm,
+bottom=1.5cm,head=0cm,foot=1cm]{geometry}
+
+\parindent=0in
+
+
+\newcommand{\m}{\mbox{ m }}
+\newcommand{\kg}{\mbox{ kg }}
+\newcommand{\s}{\mbox{ s }}
+\newcommand{\ke}{\mbox{\small KE}}
+\newcommand{\pe}{\mbox{\small PE}}
+
+
+\newcommand{ \probDir}[1]{{ \bf\small #1 \mbox{  }}}
+
+\newcommand{ \breakList}{\setcounter{saveenum}{\value{enumi}} \end{enumerate}}
+\newcommand{ \contList}{\begin{enumerate} \setcounter{enumi}{\value{saveenum}}}
+
+\newcounter{saveenum}
+
+\def \wspace{5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+{\bf{Honors Physics} \hfill Notepage: Work, Power, and Impulse \hfill {Mr. Kelley}} \\ \\
+%%%%%%%%%%
+
+\vspace{1cm}
+
+\hfill \parbox{7cm}{\centering There are some important relationships between force, energy, and momentum. Recall that if an unbalanced force is acting on a body, the body will accelerate.} \hfill  \parbox{7cm}{\centering If a force acts on a body for a finite time interval, what would be the difference between a long time interval and a short time interval for the same force?} \hfill \hspace{0cm}
+
+\vspace{.75cm}
+
+\hfill \includegraphics{forcedMass} \hspace{5cm}
+
+
+\vspace{1.5cm}
+
+\hfill \parbox{6.5cm}{Newton defined force as the rate of change of momentum. $$F= \frac{\Delta \rho}{\Delta t}$$} \hfill \parbox{7.5cm}{Multiplying by time gives us an interesting way to understand the effect of a force $F$ acting for a time interval $\Delta t$.  $$F \Delta t= \Delta \rho $$} \hfill \mbox{}
+
+\vspace{.75cm}
+
+\hfill \parbox{10cm}{Thus the effect of a force acting for a specific amount of time is a change in momentum.  This quantity is called \emph{impulse} and is given the variable $I$.  It has the same units as momentum. } \hfill \mbox{} $$I =F \Delta t$$
+
+\hrule{}  \vspace{1cm}
+
+\hfill \parbox{6.5cm}{Consider a body of mass $m$ in a gravitational field.  If the body starts at a height of $h_\circ$ and ends up at a height of $h_f$, \begin{itemize} \item What has changed?  \item Where did that energy come from?  \item What had to happen for the body to move from one place to another? \end{itemize}} \hfill \raisebox{-4cm}{\includegraphics{raisedMass}} \hfill \mbox{}
+
+\pagebreak
+
+\hfill \parbox{6.5cm}{The mass on the previous page had to have been acted upon by a force, and we can see that the result was a change in (potential) energy.  A force can also effect a change in kinetic energy, or other kinds of energy.  When this happens, we say that there was \emph{work} done on the mass.  Work has units of energy.} \hfill \parbox{5cm}{$$W = F \cdot d \cos \theta$$ In the above equation, $\theta$ is the angle between the force and the path $d$.  If the force is in the same direction as the motion of the mass, the equation becomes $$W = F \cdot d$$} \hfill \mbox{}
+
+\hrule \vspace{1cm}
+
+\hfill \parbox{10cm}{Now consider the example of climbing stairs.  If you walk up the stairs, you are changing your potential energy by \emph{doing work}.  What is the difference between running up the stairs and walking slow?  The rate of change of energy (or the rate at which work is done) is called \emph{power}.  Power is represented by the variable $P$ and has units of J/s.} \hfill \mbox{} $$P =\frac{\Delta E}{\Delta t} \hspace{2cm} P =\frac{W}{\Delta t}$$
+
+
+\end{document}
+
+
+
+
+
+
+
+
+

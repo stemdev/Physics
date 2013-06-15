@@ -1,0 +1,60 @@
+\documentclass[12pt]{report}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{verbatim}
+\usepackage[letterpaper,left=1cm,right=2cm, top=1.5cm,
+bottom=1.5cm,head=0cm,foot=1cm]{geometry}
+
+\parindent=0in
+
+\newcommand{ \probDir}[1]{{ \bf\small #1 \mbox{  }}}
+
+\newcommand{ \breakList}{\setcounter{saveenum}{\value{enumi}} \end{enumerate}}
+\newcommand{ \contList}{\begin{enumerate} \setcounter{enumi}{\value{saveenum}}}
+
+\newcounter{saveenum}
+
+\def \wspace{4cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+{\bf{Honors Physics} \hfill {Quiz 2: Kinematics} \hfill {Mr. Kelley}} \\ \\
+%%%%%%%%%%
+
+\begin{multicols}{2}
+\begin{enumerate}
+\item A vector $\vec{a}$ points with an angle of $45^\circ$ above the horizontal.  If the $x$-component of $\vec{a}$ is 10 units, what is the $y$-component?
+\vspace{\wspace}
+\item A football is kicked from the ground with an initial velocity of $\vec{v} = 20$ m$/$s, at $60^\circ$ above the horizontal.  With what velocity (magnitude and direction) will the ball hit the ground?
+\vspace{\wspace}
+\item Consider the same football being kicked.  The kicker notices that $v_y$ of the ball is $+10$m/s when the ball first reaches eye-level.  What is $v_y$ of the ball when it reaches eye-level again?
+\vspace{\wspace}
+\item Still the same ball; What is $v_y$ when the ball is exactly half way through its flight?
+\vspace{\wspace}
+\breakList
+\end{multicols}
+
+\vspace{\wspace}
+
+%%%%%%%%%%
+\probDir{Show all work on the following problems, which refer to the football in problem 2l:}
+%%%%%%%%%%
+\contList
+\item What is the max height of the football?
+\vspace{\wspace}
+\pagebreak
+\item How long does it take the football to get to the max height?
+\vspace{\wspace} \vspace{\wspace}
+\item What is the time that the football is in the air?
+\vspace{\wspace}
+\item How far down the field does the football land?
+\breakList
+\vspace{\wspace}
+
+
+
+\end{document}

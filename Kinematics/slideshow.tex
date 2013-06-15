@@ -1,0 +1,186 @@
+\documentclass{beamer}
+\usepackage{beamerthemeshadow}
+\usepackage{xmpmulti}
+\usefonttheme[onlymath]{serif}
+
+
+\graphicspath{ {./graphics/} }
+
+
+
+\usecolortheme{rose}
+\usetheme{Warsaw}
+
+
+\title{Petaluma High School}
+\author{Mr. Kelley}
+\institute{Petaluma High School}
+\date{Fall 2012}
+
+
+\newcommand{\m}{\mbox{ m }}
+
+\newcommand{ \bigLPic}[2]{
+       \includegraphics[scale = .34]<#1>{#2}}
+
+\newcommand{ \bigPPic}[2]{
+       \includegraphics[angle = -90, scale = .20]<#1>{#2}}
+
+\newcommand{ \halfnhalfLR}[2]{
+       \begin{columns}
+       \column{.5\textwidth}
+       #1
+       \column{.5\textwidth}
+       #2
+       \end{columns}
+}
+\newcommand{ \halfnhalfBR}[2]{
+       \begin{columns}
+       \column{.3\textwidth}
+       #1
+       \column{.7\textwidth}
+       #2
+       \end{columns}
+}
+
+\newcommand{ \halfnhalfBL}[2]{
+       \begin{columns}
+       \column{.7\textwidth}
+       #1
+       \column{.3\textwidth}
+       #2
+       \end{columns}
+}
+
+\newcommand{ \halfnhalfRL}[2]{
+       \begin{columns}
+       \column{.5\textwidth}
+       #2
+       \column{.5\textwidth}
+       #1
+       \end{columns}
+}
+
+
+\begin{document}
+
+\section{Kinematics}
+
+\frame{
+       \frametitle{Reference Frames}
+       
+	{\huge If you are floating in empty space, and you see a fellow floater approaching you, how do you know which one of you is moving?}
+}
+
+\frame{
+       \frametitle{Reference Frames}
+       
+	{\huge A ``Reference Frame", or zero-point, or origin, \emph{must always be chosen} in order to apply a mathematical model to a physical situation.}
+}
+
+\frame{
+	\frametitle{Distance vs. Displacement}
+	
+	Let $x(t)$ be the position of a particle (or ``body") at time $t$. \\
+	\pause
+	For some body,
+	\begin{align*}
+	\uncover<3->{x(0) &= 0} \\
+	\uncover<4->{x(1) &= 20 \m} \\
+	\uncover<5->{x(2) &= 10 \m} 
+	\end{align*}
+	\uncover<6->{The \emph{displacement} of this body is 10 m, while the total distance it traveled is 30 m.}
+     }
+
+\frame{
+	\frametitle{Average Velocity vs. Average Speed}
+	Same body: \pause
+	\begin{align*}
+	x(0) &= 0 \\
+	x(1) &= 20 \m \\
+	x(2) &= 10 \m
+	\end{align*}
+	\pause
+	What is the average velocity and the average speed in the time interval $t=0$ to $t=2$s? \pause
+	$$ \mbox{average speed} = \frac{\mbox{distance traveled}}{\mbox{time elapsed}}$$
+	$$ \mbox{average velocity} = \frac{\mbox{displacement}}{\mbox{time elapsed}} = \frac{\mbox{final position - initial position}}{\mbox{time elapsed}}$$
+	
+	}
+	
+\frame{
+	\frametitle{Velocity vs. Speed}
+	\begin{center}
+	For a new body \pause
+	\begin{align*}
+	x(0) &= 0 \\
+	x(5) &= -20 \m
+	\end{align*}
+	\pause
+	What is the average speed and velocity of this body? \\ \pause
+	Velocity is like speed, except direction matters.
+	\end{center}
+       }
+       
+\frame{
+	\frametitle{Instantaneous Velocity}
+	\begin{center}
+	Average Velocity:
+	$$\overline{v} = \frac{\Delta x}{\Delta t}$$ \pause
+	
+	\vspace{1cm}
+	Instantaneous Velocity:
+	$$ v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} $$ \pause
+	$$ v = \frac{dx}{dt} $$
+	\end{center}
+       }
+
+\frame{
+	\frametitle{Average Acceleration}
+	Average Acceleration is the change in velocity divided by the change in time:
+	$$\overline{a} = \frac{\Delta v}{\Delta t}$$ \pause
+	
+	\vspace{1cm}
+	\begin{center}
+	For some body \pause
+	\begin{align*}
+	v(0) &= 10 \mbox{m/s} \\
+	v(5) &= 30 \mbox{m/s} \\
+	\end{align*}
+	\pause
+	What is the average acceleration this body? \\ 
+	\end{center}
+	}
+	
+\frame{
+	\frametitle{Kinematics Equations}
+	\begin{align*}
+	v &= v_\circ + at \\ \\
+	x &= x_\circ +v_\circ t + \frac{1}{2}at^2 \\ \\
+	v^2 &= v_\circ^2 + 2a(x-x_\circ) \\ \\
+	\overline{v} &= \frac{v+v_\circ}{2} \\
+	\end{align*}
+	}
+
+\frame{
+	\frametitle{The Graph of $x$ vs. $t$.}
+	\begin{center}
+	\includegraphics[scale = .8]<1>{xvst5.pdf}
+	\includegraphics[scale = .8]<2>{xvst3.pdf} 
+	\includegraphics[scale = .8]<3>{xvst4.pdf}  
+	\includegraphics[scale = .8]<4>{xvst1.pdf}  
+	\end{center}
+       }
+       
+\frame{
+	\frametitle{The Graph of $v$ vs. $t$.}
+	\begin{center}
+	\includegraphics[scale = .8]<1>{vvst1.pdf}
+	\includegraphics[scale = .8]<2>{vvst2.pdf} 
+	\includegraphics[scale = .8]<3>{vvst3.pdf}  
+	\includegraphics[scale = .8]<4>{vvst4.pdf}  
+	\end{center}
+       }
+
+
+              
+\end{document}

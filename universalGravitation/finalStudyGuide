@@ -1,0 +1,95 @@
+\documentclass[12pt]{report}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{verbatim}
+
+%\usepackage{adjustbox}
+
+\usepackage[letterpaper,left=1cm,right=2cm, top=1.5cm,
+bottom=1.5cm,head=0cm,foot=1cm]{geometry}
+
+\parindent=0in
+
+
+\newcommand{\m}{\mbox{ m }}
+\newcommand{\kg}{\mbox{ kg }}
+\newcommand{\s}{\mbox{ s }}
+\newcommand{\ke}{\mbox{\small KE}}
+\newcommand{\pe}{\mbox{\small PE}}
+
+
+\newcommand{ \probDir}[1]{{ \bf\small #1 \mbox{  }}}
+
+\newcommand{ \breakList}{\setcounter{saveenum}{\value{enumi}} \end{enumerate}}
+\newcommand{ \contList}{\begin{enumerate} \setcounter{enumi}{\value{saveenum}}}
+
+\newcounter{saveenum}
+
+\def \wspace{5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+{\bf{Honors Physics} \hfill What's on the final? \hfill {Mr. Kelley}} \\ \\
+%%%%%%%%%%
+\begin{multicols}{2}
+\begin{itemize}
+\item 1-D Kinematics
+\begin{itemize}
+\item velocity
+\item acceleration
+\item distance/displacement
+\item v vs. t graphs
+\end{itemize}
+\item 2-D Kinematics
+\begin{itemize}
+\item How long does it take an object to fall some distance?
+\item Projectiles straight off a cliff
+\item Projectiles at an angle
+\end{itemize}
+\item Conservation of Momentum
+\begin{itemize}
+\item 1-D Collisions
+\item 2-D Collisions
+\item Recoil (e.g.: bouncing back, or a bullet from a gun)
+\item Two objects sticking together
+\item Impulse
+\end{itemize}
+\item Forces
+\begin{itemize}
+\item Newton's Laws
+\item Friction
+\item Tension
+\item Hanging mass
+\item Inclined plane
+\item Impulse
+\end{itemize}
+\item Energy
+\begin{itemize}
+\item Potential energy
+\item Kinetic energy
+\item Conservation of energy (Roller coasters, falling objects)
+\item Work
+\item Work-Energy Theorem
+\end{itemize}
+\item Universal Gravitation
+\begin{itemize}
+\item Centripetal acceleration/force
+\item Force of gravity between two objects
+\item How does $F_g$ change with distance?
+\item Satellite motion
+\item Car making a turn (friction, centripetal motion)
+\item $g$'s
+\item Gravitational Potential Energy $U$
+\item Escape velocity
+\item Black holes (calculate event horizon, or mass)
+\vspace{4cm}
+\end{itemize}
+\end{itemize}
+\end{multicols}
+
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[12pt]{report}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{verbatim}
+\usepackage[letterpaper,left=1.5cm,right=2.5cm, top=1.5cm,
+bottom=1.9cm,head=0cm,foot=1cm]{geometry}
+
+\parindent=0in
+
+\newcommand{ \probDir}[1]{{ \bf\small #1 \mbox{  }}}
+
+\newcommand{ \breakList}{\setcounter{saveenum}{\value{enumi}} \end{enumerate}}
+\newcommand{ \contList}{\begin{enumerate} \setcounter{enumi}{\value{saveenum}}}
+
+\newcommand{ \labTitle}[1]{{ \Large \bf {Lab: #1} \\ {Honors Physics - PHS} \\  {Mr. Kelley} \vspace{.1cm}}}
+\newcommand{ \lessTitle}[1]{{ \Large \bf {Lesson: #1} \\ {Honors Physics - PHS} \\  {Mr. Kelley} \vspace{.1cm}}}
+\newcommand{ \summary}[1]{ \hrulefill \\  {\large \bf Overview \\} \begin{center}\fbox{{\parbox{15cm}{#1}}}\end{center} \vspace{.5cm}}
+\newcommand{ \standards}[1]{ \hrulefill \\ {\large \bf Standards \\} #1 }
+\newcommand{ \materials}[1]{ \hrulefill \\ {\large \bf Materials \\} #1}
+\newcommand{ \swbat}[1]{ \hrulefill \\ {\large \bf Learning Goals \\} #1}
+\newcommand{ \assess}[1]{ \hrulefill \\ {\large \bf Assessment \\} #1}
+\newcommand{ \accom}[1]{ \hrulefill \\ {\large \bf Accommodations \\} #1}
+\newcommand{ \sequence}[1]{ \hrulefill \\ {\large \bf Lesson Sequence \\} \begin{enumerate} #1 \end{enumerate}}
+\newcommand{ \seq}[3]{\item {\bf#1.} #3 {\bf(#2)}}
+
+\newcounter{saveenum}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+
+\lessTitle{Scientific notation, and metric prefixes}
+
+\summary{This is a brief introduction to scientific notation and prefixes}
+
+%\standards{This lesson covers multiple standards in the NGSS}
+
+\materials{
+\begin{itemize}
+\item This lesson includes a slideshow presentation.
+\end{itemize}
+}
+
+\swbat{Students will be able to convert numbers between scientific and standard notation.  Students will understand }
+
+\assess{This activity will be informally assessed, with points awarded for engaged participation.  The teacher should be looking for sound/scientific argumentation during the presentation period, as well as encouraging and engaging such discussion.}
+\pagebreak
+
+\sequence{
+\seq{Introduction}{5-10 min}{Since this lab is designed to run off student input, little introduction or explanation of the \emph{physics} is involved.  Distribute handout (included).  Describe the steps leading up to the flask being placed over the flame, and then tell the students to ``observe what happens."  Inform the students that they are to illustrate their ideas about what happens on the poster paper, using pictures, words, formulas, or anything else.  Inform them that they will be defending their ideas (as groups) to the entire class.}
+\seq{Observation vs. Hypothesis}{5-10 min}{Generate a discussion that distinguishes an observation from a hypothesis.  Use a synonym map to create definitions with student input.  Some keywords for hypothesis may include; Guess, Opinion, Synthesis, Question, Idea to Test, Explanation...  Some keywords for observation may include; Objective, Factual, The Same for Everybody, Descriptive.}
+\seq{Grouping}{3 min}{Organize students into groups of 3 or 4 using any method.}
+\seq{Materials}{8 min}{Have students pick up materials, buffet-style. (See student handout)}
+\seq{Main Activity}{15 - 20 min}{Students will run the experiment, and discuss amongst themselves what is happening.  Poster creation is also happening during this time.  Make the ice available to them, but do not offer any reasons for why they should or shouldn't use it.  (The ice allows for the testing of ideas about ideal gases involved.)  This is an opportunity to circulate and ask questions of the students.  The most important question for this activity is, ``How do you know that?"  This simple question helps to differentiate hypothesis from observation.}
+\seq{Presentations}{45 - 60 min}{Have students present in front of the class, or have the class direct attention to the various groups around the room}
+}
+\end{document}

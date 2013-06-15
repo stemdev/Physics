@@ -1,0 +1,207 @@
+\documentclass{beamer}
+\usepackage{beamerthemeshadow}
+\usepackage{xmpmulti}
+
+\graphicspath{ {./graphics/} }
+
+\usecolortheme{rose}
+\usetheme{Warsaw}
+
+
+\title{Petaluma High School}
+\author{Mr. Kelley}
+\institute{Petaluma High School}
+\date{Fall 2012}
+
+%\newcommand{\dims
+
+
+\newcommand{ \bigLPic}[2]{
+       \includegraphics[scale = .34]<#1>{#2}}
+
+\newcommand{ \bigPPic}[2]{
+       \includegraphics[angle = -90, scale = .20]<#1>{#2}}
+
+\newcommand{ \halfnhalfLR}[2]{
+       \begin{columns}
+       \column{.5\textwidth}
+       #1
+       \column{.5\textwidth}
+       #2
+       \end{columns}
+}
+\newcommand{ \halfnhalfBR}[2]{
+       \begin{columns}
+       \column{.3\textwidth}
+       #1
+       \column{.7\textwidth}
+       #2
+       \end{columns}
+}
+
+\newcommand{ \halfnhalfBL}[2]{
+       \begin{columns}
+       \column{.7\textwidth}
+       #1
+       \column{.3\textwidth}
+       #2
+       \end{columns}
+}
+
+\newcommand{ \halfnhalfRL}[2]{
+       \begin{columns}
+       \column{.5\textwidth}
+       #2
+       \column{.5\textwidth}
+       #1
+       \end{columns}
+}
+
+
+\begin{document}
+
+\section{Math Preliminaries}
+
+\frame{
+       \frametitle{Powers of 10}
+       
+	Scientific Notation is a tool for making calculations easier and more understandable:
+	\pause
+	$$3.14 \times 10^{12}  $$
+	$$2.5 \times 10^{-9}$$
+	\pause
+	The above is much easier to read than
+	\pause
+	$$3140000000000$$
+	$$.0000000025$$
+}
+
+\frame{
+	\frametitle{Multiplying with Exponents}
+	
+	Recall that $$x^{a} \cdot x^{b} = x^{a+b}$$
+	\pause
+	And that $$(p \cdot x) \cdot (q \cdot y) = (p \cdot q) \cdot (x \cdot y)$$
+	\pause
+	It follows that $$(3.1 \times 10^{11}) \cdot (2 \times 10^{-4}) = 6.2 \times 10^{7}$$
+
+     }
+
+\frame{
+	\frametitle{Multiplying with Exponents}
+	Try the following problems:
+	\begin{enumerate}
+	\item $3 \times 10^8 - 2 \times 10^8 \uncover<2->{= 1\times 10^8}$
+	\item $3.0 \times 10^8 - 2 \times 10^7 \uncover<3->{= 2.8 \times 10^8}$
+	\item $(4 \times 10^4) \cdot (2 \times 10^5) \uncover<4->{= 8 \times 10^9}$
+	\item $(3.3 \times 10^6) \cdot (2 \times 10^{-9}) \uncover<5->{= 6.6 \times 10^{-3}}$
+	\item $(5 \times 10^{5}) \cdot (7 \times 10^{11}) \uncover<6->{= 35 \times 10^{16} =} \uncover<7->{3.5 \times 10^{17}}$
+	\item $(3 \times 10^{-6}) \cdot (6 \times 10^{-14}) \uncover<8->{= 18 \times 10 ^{-20} =} \uncover<9->{1.8 \times 10^{-19}}$ 
+	\end{enumerate}
+	}
+	
+\frame{
+	\frametitle{Orders of Magnitude}
+	\begin{center}
+	$$7.33 \times 10^{19}$$ \pause
+	is 9 orders of magnitude larger than \pause 
+	$$8.91 \times 10^{10}$$
+	\end{center}
+       }
+       
+\frame{
+	\frametitle{Orders of Magnitude}
+	\begin{center}
+	$$m = 1.67 \times 10^{-27}$$ \pause
+	$m$ is ``on the order of" $10^{-27}$ \pause 
+	$$n = 6.02 \times 10^{23}$$ \pause
+	$n$ is on the order of  $10^{24}$ \\ \vspace{.4cm} \pause
+	$376.73031\dots$ is on the order of $10^2$
+	\end{center}
+       }
+
+\frame{
+	\frametitle{Metric Prefixes}
+	\begin{itemize}
+	\item<1->Prefixes are power-of-10 multipliers
+	\item<2->$1 \mbox{kg} = 1 \times 10^3 \mbox{g}$
+	\item<3->$1 \mbox{TB} = 1 \times 10^{12} \mbox{Bytes} = 1000 \mbox{GB}$
+	\end{itemize}
+	}
+       
+\frame{
+	\frametitle{Metric Prefixes}
+	In 2003, IBM was making a cutting edge 64 MB flash drive.
+	\pause
+	\begin{enumerate}[(a)]
+	\item How many Bytes is this?
+	\item How many 64 MB drives would you need to equal the capacity of an 8 GB drive?
+	\end{enumerate}
+	}
+	
+\frame{
+	\frametitle{Measurement}
+	\begin{center}
+	\includegraphics[scale = .35]<1>{accPrec}
+	\includegraphics[scale = 1.8]<2>{ruler}
+	\end{center}
+}
+
+\frame{
+	\frametitle{Measurement}
+	Example: \\
+	\pause
+	One can (16 oz) of Rockstar Energy Drink contains 150 mg of caffeine. \\ \vspace{.4cm}
+	\pause
+	Timmy drinks 3 shots of the stuff. \\ \vspace{.4cm}
+	\pause
+	How much caffeine did Timmy consume? \\ \vspace{.4cm}
+	\pause (Hint: A shot is about 1 oz) \\ \vspace{.4cm}
+	\pause Answer: 28.125 mg \\
+	\pause What is wrong with this answer?
+	}
+
+\frame{
+	\frametitle{Significant Figures}
+	Scientists use \emph{significant figures} keep track of uncertainty. \\ \vspace{.7cm}
+	\begin{center}
+	\begin{tabular}{c|c}
+	Number & Sig Figs \\ \hline \hline
+	34 s & \uncover<1->{2} \\ \hline
+	101 m & \uncover<2->{3} \\ \hline
+	9.77 $^\circ$C & \uncover<3->{3} \\ \hline
+	2 dogs & \uncover<4->{$\infty$} \\ \hline
+	2000 kg & \uncover<5->{1} \\ \hline
+	20. cal & \uncover<6->{2} \\ \hline
+	20.00 mL & \uncover<7->{4} \\ \hline
+	0.0003 g & \uncover<8->{1} \\ \hline
+	0.020000 s & \uncover<9->{5} \\ \hline
+	0.02006 ft & \uncover<10->{4} \\ \hline
+	$\pi$ radians & \uncover<11->{$\infty$}
+	\end{tabular}
+	\end{center}
+	}
+	
+\frame{
+	\frametitle{Conversions and Dimensional Analysis}
+	\begin{center}
+	To convert from one unit to another, you must use a\\ \emph{conversion factor}. \\
+	Conversion factors come from equivalencies like: 
+	$$1.00 \mbox{ kg} = 2.20 \mbox{ lb}$$
+	$$1 \mbox{ nm} = 1 \times 10^{-9} \mbox{ m}$$
+	$$1 \mbox{ ft} = 30.48 \mbox{ cm}$$
+	\end{center}
+	}
+	
+\frame{
+	\frametitle{Conversions and Dimensional Analysis}
+	Example Conversions: \\ \pause
+	\begin{enumerate}
+	\item How does a 5'9", 150 lb person measure up in standard SI units?
+	\item How many nanometers are in 13 m?
+	\item How many square centimeters are in a square mile?
+	\item How many m/s is 80 km/h?
+	\end{enumerate}
+	}
+       
+\end{document}

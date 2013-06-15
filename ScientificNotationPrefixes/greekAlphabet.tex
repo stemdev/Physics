@@ -1,0 +1,90 @@
+% The Greek alphabet in LaTeX math mode.
+%
+% This file is hereby placed in the public domain.
+%
+% This is just intended to be a very plain chart of the Greek letters
+% available in LaTeX math mode.
+%
+% Lower case letters are given in the leftmost column, and uppercase in
+% the rightmost column. To write uppercase letters, capitalize the first
+% letter of the command, ie. \Gamma, \Delta, \Theta, ... .
+% Note that the uppercase letters displayed in grey, and the lowercase
+% omicron, have no representation in LaTeX math mode as they are
+% indistinguishable from Roman letters. When using these Greek letters in
+% math formulae, it is advisable to set them in "roman" typeface in order to
+% match the styling of other Greek letters in math mode. For example
+% use {\rm B} for uppercase Beta, and {\rm o} for a lowercase omicron.
+%
+% Where two variants of the lowercase letter are available, the second
+% is written by prepending 'var' to the command name, ie. \varepsilon,
+% \vartheta, \varpi, ... .
+%
+% ChangeLog
+% ---------
+%
+% Fri Mar  2 2007 Conrad Parker <conrad@metadecks.org>
+%   * Set roman-equivalent letters in roman typeface {\rm }, as suggested
+%     in "TeX for the Impatient", by Abrahams, Berry, and Hargreaves (1990)
+%   * Fixed rendering of omicron (using roman o, O, not \o, \O)
+%
+% Mon Feb 12 2007 Conrad Parker <conrad@metadecks.org>
+%   * first version
+
+\documentclass{report}
+\usepackage[usenames,dvips]{color}
+\usepackage[top=1cm,nohead,nofoot]{geometry}
+\pagestyle{empty}
+
+% Uncomment if you are a Web 2.0 programmer
+%\def\washed#1{\color{CornflowerBlue}#1\qquad}
+\def\washed#1{\color{Gray}#1\qquad}
+
+\def\name#1{\washed{\string#1}}
+\def\roman#1{\washed{\rm #1}}
+
+\def\letter#1#2{#1\qquad		& \name#1	& \roman#2	\\}
+\def\Letter#1#2{#1\qquad		& \name#1	& #2		\\}
+\def\varletter#1#2#3{#1, #2\qquad	& \name#1	& \roman#3	\\}
+\def\VarLetter#1#2#3{#1, #2\qquad	& \name#1	& #3		\\}
+\def\omicron{\roman{o}		& {\roman{[omicron]}}	& \roman{O}	\\}
+
+\begin{document}
+
+\begin{center}
+{ \bf \Huge The Greek Alphabet}
+\end{center}
+
+\begin{huge}
+\begin{center}
+\begin{math}
+\begin{array}{lll}
+\letter \alpha	A
+\letter \beta	B
+\Letter \gamma	\Gamma
+\Letter \delta	\Delta
+\varletter \epsilon \varepsilon	E
+\letter \zeta	Z
+\letter \eta	H
+\VarLetter \theta \vartheta \Theta
+\letter \iota	I
+\letter \kappa	K
+\Letter \lambda \Lambda
+\letter \mu	M
+\letter \nu	N
+\Letter \xi	\Xi
+\omicron
+\VarLetter \pi \varpi \Pi
+\varletter \rho \varrho	P
+\VarLetter \sigma \varsigma \Sigma
+\letter \tau	T
+\Letter \upsilon \Upsilon
+\VarLetter \phi \varphi \Phi
+\letter{\chi}	X
+\Letter \psi \Psi
+\Letter \omega \Omega
+\end{array}
+\end{math}
+\end{center}
+\end{huge}
+
+\end{document}

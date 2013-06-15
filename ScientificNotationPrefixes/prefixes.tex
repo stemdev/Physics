@@ -1,0 +1,66 @@
+\documentclass[12pt]{report}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{verbatim}
+\usepackage[letterpaper,left=1.5cm,right=2.5cm, top=1.5cm,
+bottom=1.9cm,head=0cm,foot=1cm]{geometry}
+
+\parindent=0in
+
+\newcommand{ \probDir}[1]{{ \bf\small #1 \mbox{  }}}
+
+\newcommand{ \breakList}{\setcounter{saveenum}{\value{enumi}} \end{enumerate}}
+\newcommand{ \contList}{\begin{enumerate} \setcounter{enumi}{\value{saveenum}}}
+
+\newcommand{ \labTitle}[1]{{ \Large \bf {Lab: #1} \\ {Honors Physics - PHS} \\  {Mr. Kelley} \vspace{.1cm}}}
+\newcommand{ \lessTitle}[1]{{ \Large \bf {Lesson: #1} \\ {Honors Physics - PHS} \\  {Mr. Kelley} \vspace{.1cm}}}
+\newcommand{ \summary}[1]{ \hrulefill \\  {\large \bf Overview \\} \begin{center}\fbox{{\parbox{15cm}{#1}}}\end{center} \vspace{.5cm}}
+\newcommand{ \standards}[1]{ \hrulefill \\ {\large \bf Standards \\} #1 }
+\newcommand{ \materials}[1]{ \hrulefill \\ {\large \bf Materials \\} #1}
+\newcommand{ \swbat}[1]{ \hrulefill \\ {\large \bf Learning Goals \\} #1}
+\newcommand{ \assess}[1]{ \hrulefill \\ {\large \bf Assessment \\} #1}
+\newcommand{ \accom}[1]{ \hrulefill \\ {\large \bf Accommodations \\} #1}
+\newcommand{ \sequence}[1]{ \hrulefill \\ {\large \bf Lesson Sequence \\} \begin{enumerate} #1 \end{enumerate}}
+\newcommand{ \seq}[3]{\item {\bf#1.} #3 {\bf(#2)}}
+
+\newcounter{saveenum}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{center}
+{\bf \huge Metric Prefixes}
+\end{center}
+
+{\Large
+$$\left|\begin{array}{ccc}
+\mbox{Prefix} & \mbox{Abbreviation} & \mbox{Value} \\
+\mbox{yotta} & \mbox{Y} & 10^{24} \\
+\mbox{zeta} & \mbox{Z} & 10^{21} \\
+\mbox{exa} & \mbox{E} & 10^{18} \\
+\mbox{peta} & \mbox{P} & 10^{15} \\
+\mbox{tera} & \mbox{T} & 10^{12} \\
+\mbox{giga} & \mbox{G} & 10^{9} \\
+\mbox{mega} & \mbox{M} & 10^{6} \\
+\mbox{kilo} & \mbox{k} & 10^{3} \\
+\mbox{hecto} & \mbox{h} & 10^{2} \\
+\mbox{deka} & \mbox{da} & 10^{1} \\
+\mbox{deci} & \mbox{d} & 10^{-1} \\
+\mbox{centi} & \mbox{c} & 10^{-2} \\
+\mbox{milli} & \mbox{m} & 10^{-3} \\
+\mbox{micro} & \mu & 10^{-6} \\
+\mbox{nano} & \mbox{n} & 10^{-9} \\
+\mbox{pico} & \mbox{p} & 10^{-12} \\
+\mbox{femto} & \mbox{f} & 10^{-15} \\
+\mbox{atto} & \mbox{a} & 10^{-18} \\
+\mbox{zepto} & \mbox{z} & 10^{-21} \\
+\mbox{yocto} & \mbox{y} & 10^{-24} \\
+\end{array}\right|
+$$
+}
+
+
+\end{document}

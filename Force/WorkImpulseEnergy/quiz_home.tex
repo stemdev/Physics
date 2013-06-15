@@ -1,0 +1,58 @@
+\documentclass[12pt]{report}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{verbatim}
+\usepackage[letterpaper,left=1cm,right=2cm, top=1.5cm,
+bottom=1.5cm,head=0cm,foot=1cm]{geometry}
+
+\parindent=0in
+
+
+\newcommand{\m}{\mbox{ m }}
+\newcommand{\kg}{\mbox{ kg }}
+\newcommand{\s}{\mbox{ s }}
+\newcommand{\ke}{\mbox{\small KE}}
+\newcommand{\pe}{\mbox{\small PE}}
+
+
+\newcommand{ \probDir}[1]{{ \bf\small #1 \mbox{  }}}
+\newcommand{ \multChoice}[5]{ \item #1 \begin{multicols}{2} \begin{enumerate} \item #2 \\ \item #3 \\ \item #4 \\ \item #5 \\ \end{enumerate} \end{multicols}}
+
+\newcommand{ \breakList}{\setcounter{saveenum}{\value{enumi}} \end{enumerate}}
+\newcommand{ \contList}{\begin{enumerate} \setcounter{enumi}{\value{saveenum}}}
+
+\newcounter{saveenum}
+
+\def \wspace{5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+{\bf{Honors Physics} \hfill {Test: Work, Energy, and Impulse} \hfill {Mr. Kelley}} \\ \\
+%%%%%%%%%%
+\mbox{} \hfill $W=F\cdot d$ \hfill $\ke = \frac{1}{2}mv^2$ \hfill $\pe = mgh$ \hfill $I = \Delta \rho = F\cdot t$ \hfill $P = \frac{W}{t}=\frac{E}{t}$ \hfill \mbox{}
+\begin{center}
+\end{center}
+\begin{enumerate}
+\item A .5 kg ball falls from a height of 15 m.  It rebounds to a height of 12 m:
+\begin{enumerate}
+\item What impulse did the ground provide in the bounce?
+\item How much energy was lost in the bounce?
+\end{enumerate}
+\vfill
+\item A $3 \times 10^4$ kg rocket ship is traveling through space at 200 m/s.  What impulse is required to change its speed to 250 m/s?
+\vfill
+\item How much work is done in lifting a 19 kg crate 10 m vertically?
+\vfill
+\item \mbox{What force is required to push a 19 kg crate up a frictionless incline at $45^\circ$ to a final height of 10 m?}
+\vfill
+\item A 50 kg cart starts from rest and rolls 100 m down a hill at $\theta = 30^\circ$.  After the 100 m, the cart is moving with a speed of 25 m/s.  How much energy was lost to friction?
+\vfill
+\item PG\&E charges about \$0.15 per kW$\cdot$hr of electricity.  How much does it cost to run a 60 W light bulb for one hour?
+\vfill
+%%%%
+\end{enumerate}
+
+\end{document}

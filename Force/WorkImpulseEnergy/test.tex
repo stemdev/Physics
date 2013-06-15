@@ -1,0 +1,61 @@
+w\documentclass[12pt]{report}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{verbatim}
+\usepackage[letterpaper,left=1cm,right=2cm, top=1.5cm,
+bottom=1.5cm,head=0cm,foot=1cm]{geometry}
+
+\parindent=0in
+
+
+\newcommand{\m}{\mbox{ m }}
+\newcommand{\kg}{\mbox{ kg }}
+\newcommand{\s}{\mbox{ s }}
+\newcommand{\ke}{\mbox{\small KE}}
+\newcommand{\pe}{\mbox{\small PE}}
+
+
+\newcommand{ \probDir}[1]{{ \bf\small #1 \mbox{  }}}
+\newcommand{ \multChoice}[5]{ \item #1 \begin{multicols}{2} \begin{enumerate} \item #2 \\ \item #3 \\ \item #4 \\ \item #5 \\ \end{enumerate} \end{multicols}}
+
+\newcommand{ \breakList}{\setcounter{saveenum}{\value{enumi}} \end{enumerate}}
+\newcommand{ \contList}{\begin{enumerate} \setcounter{enumi}{\value{saveenum}}}
+
+\newcounter{saveenum}
+
+\def \wspace{5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+{\bf{Honors Physics} \hfill {Test: Work, Energy, and Impulse} \hfill {Mr. Kelley}} \\ \\
+%%%%%%%%%%
+\mbox{} \hfill $W=F\cdot d$ \hfill $\ke = \frac{1}{2}mv^2$ \hfill $\pe = mgh$ \hfill $I = \Delta \rho = F\cdot t$ \hfill $P = \frac{W}{t}=\frac{E}{t}$ \hfill \mbox{}
+\begin{center}
+\end{center}
+\begin{enumerate}
+\item A 0.5 kg ball falls from a height of 15 m.  It rebounds to a height of 12 m:
+\begin{enumerate}
+\item What impulse did the ground provide in the bounce?
+\vfill
+\item How much energy was lost in the bounce?
+\end{enumerate}
+\vfill
+\item A google search reveals the mass of the USS Enterprise starship to be $3.25 \times 10^9$ kg.  If the starship is traveling at $6.0 \times 10^7$ m/s, what impulse is required to double its velocity?
+\vspace{8cm}
+\pagebreak
+\item A 750 kg car drives a distance of 200 m up a hill at an angle of 30$^\circ$.
+\begin{enumerate}
+\item What is the change in potential energy of the car?
+\item How much work did the car do?
+\item What force was required to make it up the hill?
+\end{enumerate}
+\vfill
+\item 45 million gallons of water fall 21.3 meters every minute at Niagara Falls.  How much power does this represent? (1 gallon H$_2$O = 3.79 kg)
+\vfill
+%%%%
+\end{enumerate}
+
+\end{document}

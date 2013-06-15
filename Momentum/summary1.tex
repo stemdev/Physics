@@ -1,0 +1,77 @@
+\documentclass[12pt]{report}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{verbatim}
+
+\usepackage[letterpaper,left=1cm,right=2cm, top=1.5cm,
+bottom=1.5cm,head=0cm,foot=1cm]{geometry}
+
+\parindent=0in
+
+
+\newcommand{\m}{\mbox{ m }}
+\newcommand{\kg}{\mbox{ kg }}
+\newcommand{\s}{\mbox{ s }}
+\newcommand{\ke}{\mbox{\small KE}}
+\newcommand{\pe}{\mbox{\small PE}}
+
+
+\newcommand{ \probDir}[1]{{ \bf\small #1 \mbox{  }}}
+
+\newcommand{ \breakList}{\setcounter{saveenum}{\value{enumi}} \end{enumerate}}
+\newcommand{ \contList}{\begin{enumerate} \setcounter{enumi}{\value{saveenum}}}
+
+\newcounter{saveenum}
+
+\def \wspace{5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+{\bf{Honors Physics} \hfill {The Story So Far...} \hfill {Mr. Kelley}} \\ \\
+%%%%%%%%%%
+
+
+
+\begin{itemize}
+\item Kinematics
+\begin{itemize}
+\item We are often interested in the position $x$ of a particle at a time $t$:   $x(t)$
+\item The rate of change of $x(t)$ is velocity, $v(t)$.  In calculus, $x'(t)=v(t)$.
+\item The rate of change of $v(t)$ is acceleration, $a(t)$.  Another derivative: $x''(t) = v'(t) = a(t)$
+\item The following are mathematical consequences of constant acceleration: \\ \\
+$v = \frac{\Delta x}{t}$ \hfill $v_f = v_0 + at$ \hfill $v_f^2 = v_0^2 + 2 a\Delta x$ \hfill $x_f = x_0 + v_0 t + \frac{1}{2}at^2$ \\
+\item These equations can be generalized to two dimensions (or 3 or 4, for that matter).  2-dimensional kinematics are used to understand the path of projectiles.
+\end{itemize}
+
+\item Conservation of Momentum
+\begin{itemize}
+\item A mass, $m$, moving at a velocity, $v$, has a momentum defined as $\rho = mv$.
+\item Momentum is conserved in the universe in all cases.  We use this law to understand collisions.
+\item Collisions can happen in 1 or more dimensions.  For each dimension, $\rho_\circ = \rho_f$.
+\end{itemize}
+
+\item Mechanical Energy
+\begin{itemize}
+\item A mass in motion has energy associated with that motion; Kinetic Energy (\ke)
+\item A mass in a gravitational field has an energy associated with its position; \\ Potential Energy (\pe)
+\item These two scalar quantities together comprise the mechanical energy of an object. \\
+\mbox{} \hfill $\ke=\frac{1}{2}mv^2$ \hspace{2cm} $\pe=mgh$ \hfill \mbox{}
+\item Under ideal conditions (conservative forces, no friction) we can use conservation of mechanical energy to understand some things about the motion of a mass.
+\item Conservation of mechanical energy:
+$$\ke_\circ + \pe_\circ = \ke_f + \pe_f$$
+\item Energy is always conserved in the universe, but mechanical energy may not always be conserved.  Energy can be transformed into heat, work, light, or other forms.
+\item In more advanced formulations of mechanics (like you would see in advanced undergraduate physics), the motion of a body is determined by minimizing the function $L(x(t), x'(t), x''(t), m) = \ke - \pe$.  In other words, the path a particle will take in nature minimizes the difference of kinetic and potential energies.
+\end{itemize}
+
+\end{itemize}
+
+
+{\bf Homework:} \\ Who was Isaac Newton and what are his three laws?  1 page max \emph{IN YOUR OWN WORDS}.
+
+
+\end{document}
